@@ -4,82 +4,99 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 
   }
   
-  .header {
+.header {
     height: 72px;
     background: darkmagenta;
+       
     
   }
 
-  .center {
+.center {
     margin: 32px;
     color: white;
     font-size: 32px;
     font-weight: 900;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-  }
+    
+    
+    justify-content: center;
+}
+
+.link {
+    margin-left: auto;
+}
   
-  .footer {
+.footer {
     height: 72px;
     background: #eee;
     color: darkmagenta;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 32px; */
+    
   }
 
-  .backgroud {
+.backgroud {
     background: royalblue;
   }
   
-  .sidebar {
-    /* width: 300px; */
-    
-    flex-shrink: 0;
+.sidebar {
     padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 32px;
-    flex-direction: ;
-  }
+    flex-flow: column wrap;
+}
   
-  .con {
+.con {
     padding: 32px;
     display: flex;
-    flex-wrap: wrap;
-    /* margin: 32px; */
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap;
   }
 
-  .con2 {
+.titele {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+.set-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.con2 {
     padding: 32px;
     display: flex;
     flex-wrap: wrap;
     background: lightblue;
     justify-content: center;
     /* margin: 32px; */
-  }
+}
   
-  a {
+a {
     color: white;
     text-decoration: none;
     font-size: 24px;
     margin: 8px;
-  }
+}
   
-  .test {
+.test {
     display: flex;
     flex: 1;
     flex-direction: column;
     /* margin: 32px; */
-  }
+}
   
-  .card {
+.card {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
@@ -88,9 +105,21 @@ body {
     padding: 32px;
     width: 300px;
     margin: 8px;
-  }
+}
 
-  .card2 {
+.card0 {
+    
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    width: 600px;
+    margin: 8px;
+    background: cornflowerblue;
+}
+
+.card2 {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
@@ -100,9 +129,9 @@ body {
     width: 300px;
     margin: 8px;
     background: royalblue;
-  }
+}
 
-  .card3 {
+.card3 {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
@@ -114,11 +143,15 @@ body {
     background: goldenrod;
     color: indigo;
 
-  }
+}
   
 .button {
     padding: 2px;
     background: goldenrod;
     color: black;
 
+}
+
+ul {
+    list-style: none;
 }
