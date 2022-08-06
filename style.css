@@ -69,6 +69,7 @@ ul {
   
   .navbar ul {
     display: flex;
+    /* align-items: center; */
   }
   
   .navbar ul li {
@@ -114,26 +115,31 @@ ul {
     padding: 15px 20px;
   
   }
-  
-  .box i {
-    margin: 10px;
-  }
 
-  .quote {
+  .quote  {
     background: #e537eb;
     margin: 8px 0;
-    display: flex;
-    justify-content: center;
-  }
-  
- .quote .container p {
-    color: #1f2937;
-    font-style: light italic;
-    text-align: center;
-    padding: 8px;
+    display: flex;  
     
   }
   
+  .quote .container  { 
+    
+    color: #1f2937;        
+    display: flex;    
+    padding: 8px;
+    justify-content: center;
+    max-width: 400px; 
+    
+  } 
+
+  .quote ul li{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 8px 0;
+    text-align: center;
+  }
+    
   .section3 .container {
     display: flex;
     justify-content: space-between;
@@ -181,6 +187,10 @@ ul {
   }
   
   @media (max-width: 768px) {
+    .navbar ul{
+        align-items: center;
+    }
+    
     .header .container {
       flex-direction: column;
       padding-top: 20px;
@@ -192,5 +202,6 @@ ul {
       flex-direction: column;
       text-align: center;  
     }
-    
+
+        
   }
